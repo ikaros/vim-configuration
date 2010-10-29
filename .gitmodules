@@ -1,0 +1,36 @@
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = http://github.com/tpope/vim-rails.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = http://github.com/tpope/vim-haml.git
+[submodule "bundle/vividchalk"]
+	path = bundle/vividchalk
+	url = http://github.com/tpope/vim-vividchalk.git
+[submodule "bundle/cucumber"]
+	path = bundle/cucumber
+	url = http://github.com/tpope/vim-cucumber.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = http://github.com/scrooloose/syntastic.git
+[submodule "bundle/zenburn"]
+	path = bundle/zenburn
+	url = http://github.com/vim-scripts/Zenburn.git
+[submodule "bundle/rubytest"]
+	path = bundle/rubytest
+	url = http://github.com/vim-scripts/Rubytest.vim.git
+[submodule "bundle/yasnippets"]
+	path = bundle/yasnippets
+	url = git@github.com:ikaros/yasnippets.git
+[submodule "bundle/sass"]
+	path = bundle/sass
+	url = http://github.com/vim-scripts/Sass.git
+[submodule "bundle/satori-color-scheme"]
+	path = bundle/satori-color-scheme
+	url = http://github.com/vim-scripts/Satori-Color-Scheme.git
