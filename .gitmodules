@@ -34,3 +34,6 @@
 [submodule "bundle/satori-color-scheme"]
 	path = bundle/satori-color-scheme
 	url = http://github.com/vim-scripts/Satori-Color-Scheme.git
+[submodule "bundle/colorx"]
+	path = bundle/colorx
+	url = http://github.com/vim-scripts/ColorX.git
