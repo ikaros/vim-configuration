@@ -1,7 +1,7 @@
-" -----------------------------------------------------------------------------  
+" -----------------------------------------------------------------------------
 " |                            VIM Settings                                   |
 " |                              GUI stuff                                    |
-" -----------------------------------------------------------------------------  
+" -----------------------------------------------------------------------------
 
 " Pathogen*********************************************************************
 call pathogen#runtime_append_all_bundles()
@@ -10,7 +10,6 @@ call pathogen#helptags()
 if has("autocmd")
   filetype plugin indent on
 endif
-" }
 
 " OS Specific *****************************************************************
 if has("gui_macvim")
@@ -39,13 +38,14 @@ end
 " General *********************************************************************
 set anti " Antialias font
 set nocompatible
-"set transparency=0
+"set transparency=0             " Opacity of MacVim
+set vb                          " Set visual bell. Silences the common bell.
 
 " Default size of window
-set columns=179 
+set columns=179
 set lines=50
 
-" Tab headings 
+" Tab headings
 set gtl=%t gtt=%F
 
 set noerrorbells             " i don't like beeps
