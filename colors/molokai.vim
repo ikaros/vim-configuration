@@ -26,6 +26,13 @@ else
     let s:molokai_original = 0
 endif
 
+" Highlight trailing whitespaces
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+hi ExtraWhitespace guifg=#FF0000 guibg=#FF0000
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74

@@ -25,7 +25,8 @@ if has("gui_macvim")
   set guioptions-=L
   set guioptions+=c              " Console-based dialogs for simple queries
   set guifont=Monaco:h10
-  colorscheme ir_black2
+
+  colorscheme molokai
 
 elseif has("gui_gtk2")
   set guifont=Monaco
