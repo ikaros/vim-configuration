@@ -14,11 +14,11 @@ Get up and running
 
 Please move your old .vimrc, .gvim and .vim out of the way.
 
-<code>
+<code><pre>
  git clone https://ikaros@github.com/ikaros/vim-configuration.git ~/.vim
  cd ~/.vim
  git submodule update --init
  rake place_vim_config
  cd bundle/syntastic
  rake install
-</code>
+</pre></code>
