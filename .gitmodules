@@ -40,3 +40,9 @@
 [submodule "bundle/snipMate"]
 	path = bundle/snipMate
 	url = http://github.com/vim-scripts/snipMate.git
+[submodule "bundle/rubycomplete"]
+	path = bundle/rubycomplete
+	url = http://github.com/vim-scripts/rubycomplete.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = http://github.com/vim-scripts/NERD_tree-Project.git
