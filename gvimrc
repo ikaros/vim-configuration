@@ -26,17 +26,16 @@ if has("gui_macvim")
   set guioptions+=c              " Console-based dialogs for simple queries
   set guifont=Monaco:h10
 
-  colorscheme molokai
 
 elseif has("gui_gtk2")
-  set guifont=Monaco
-  set guioptions-=T  " remove toolbar
+  set guioptions=  " remove toolbar
 
 elseif has("x11")
 elseif has("gui_win32")
 end
 
 " General *********************************************************************
+colorscheme molokai
 set anti " Antialias font
 set nocompatible
 "set transparency=0             " Opacity of MacVim

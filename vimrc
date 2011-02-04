@@ -27,7 +27,7 @@ set cpoptions=aABceFsmq
              "||+-- A backslash has no special meaning in mappings
              "|+-- :write updates alternative file name
              "+-- :read updates alternative file name
-
+colorscheme molokai
 syntax on " syntax highlighting on
 " }
 
