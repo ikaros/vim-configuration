@@ -45,4 +45,10 @@
 	url = http://github.com/vim-scripts/rubycomplete.vim.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = http://github.com/vim-scripts/NERD_tree-Project.git
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/textobj_user"]
+	path = bundle/textobj_user
+	url = https://github.com/kana/vim-textobj-user.git
+[submodule "bundle/textobj_rubyblock"]
+	path = bundle/textobj_rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git

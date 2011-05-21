@@ -13,18 +13,19 @@ endif
 
 " OS Specific *****************************************************************
 if has("gui_macvim")
-  set fuoptions=maxvert,maxhorz  " fullscreen options (MacVim only), resized window when changed to fullscreen
-  set stal=1                     " Show tabs
-                                 " 0: never
-                                 " 1: only if there are at least two tab pages
-                                 " 2: always
-
-  set guioptions-=T              " Remove the toolbar and menubar
-  set guioptions-=m
-  set guioptions-=r              " Remove right- and left-hand scrollbars
-  set guioptions-=L
-  set guioptions+=c              " Console-based dialogs for simple queries
+  set noanti                    " no antialiased fonts
+  set fuoptions=maxvert,maxhorz " fullscreen options (MacVim only),
+                                " resized window when changed to fullscreen
+  set vb                        " Set visual bell. Silences the common bell.
+  set stal=1                    " Show tabs
+                                " 0: never
+                                " 1: only if there are at least two tab pages
+                                " 2: always
+  set guioptions=               " Remove the toolbar, menubar, scrollbars etc
   set guifont=Monaco:h10
+
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> <Plug>PeepOpen
 
 
 elseif has("gui_gtk2")
@@ -36,10 +37,8 @@ end
 
 " General *********************************************************************
 colorscheme molokai
-set anti " Antialias font
 set nocompatible
 "set transparency=0             " Opacity of MacVim
-set vb                          " Set visual bell. Silences the common bell.
 
 " Default size of window
 set columns=179
@@ -53,7 +52,6 @@ set expandtab                " i don't like tabs
 
 set cpoptions=aABcsmq        " some options
 syntax on                    " syntax highlighting on
-filetype plugin indent on    " load filetype plugins/indent
 set number
 set fileformats=unix         " i don't care about dos or mac
 set showmatch                " show matching brackets
