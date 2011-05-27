@@ -1,9 +1,22 @@
 " Pathogen {
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+" }
 
+" Autocommands {
 if has("autocmd")
-  filetype plugin indent on
+  filetype plugin indent on " Enable file type detection
+
+  autocmd FileType make       setlocal ts=8 sts=8 sw=8 noexpandtab nolist
+  autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType vim        setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType css        setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab nolist
+
+  " Treat .rss files as XML
+  autocmd BufNewFile,BufRead *.rss setfiletype xml
 endif
 " }
 
@@ -105,18 +118,3 @@ set shiftround       " when at 3 spaces, and I hit > ... go to 4, not 5
 set smartcase        " if there are caps, go case-sensitive
 " }
 
-" Autocommands {
-if has("autocmd")
-  filetype plugin indent on " Enable file type detection
-
-  autocmd FileType make       setlocal ts=8 sts=8 sw=8 noexpandtab nolist
-  autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab   list
-  autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab   list
-  autocmd FileType vim        setlocal ts=2 sts=2 sw=2 expandtab   list
-  autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab   list
-  autocmd FileType css        setlocal ts=2 sts=2 sw=2 expandtab   list
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab nolist
-
-  " Treat .rss files as XML
-  autocmd BufNewFile,BufRead *.rss setfiletype xml
-endif
