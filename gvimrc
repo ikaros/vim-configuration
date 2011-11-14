@@ -13,7 +13,7 @@ endif
 
 " OS Specific *****************************************************************
 if has("gui_macvim")
-  set noanti                    " no antialiased fonts
+  set anti                      " antialiase fonts
   set fuoptions=maxvert,maxhorz " fullscreen options (MacVim only),
                                 " resized window when changed to fullscreen
   set vb                        " Set visual bell. Silences the common bell.
@@ -22,7 +22,7 @@ if has("gui_macvim")
                                 " 1: only if there are at least two tab pages
                                 " 2: always
   set guioptions=               " Remove the toolbar, menubar, scrollbars etc
-  set guifont=Monaco:h10
+  set guifont=Monaco:h12
 
   macmenu &File.New\ Tab key=<nop>
   map <D-t> <Plug>PeepOpen
@@ -36,7 +36,6 @@ elseif has("gui_win32")
 end
 
 " General *********************************************************************
-colorscheme molokai
 set nocompatible
 "set transparency=0             " Opacity of MacVim
 

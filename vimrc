@@ -9,21 +9,28 @@ if has("autocmd")
 
   autocmd FileType make       setlocal ts=8 sts=8 sw=8 noexpandtab nolist
   autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType cucumber   setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType python     setlocal ts=4 sts=4 sw=4 expandtab   list
   autocmd FileType vim        setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType css        setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab nolist
+  autocmd FileType snippet    setlocal ts=8 sts=8 sw=8 noexpandtab nolist
+  autocmd FileType xml        setlocal ts=4 sts=4 sw=4 noexpandtab list
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+
+  " Gemfile is also ruby
+  autocmd BufNewFile,BufRead Gemfile setfiletype ruby
+
 endif
 " }
 
 " Basics {
 set nocompatible    " explicitly get out of vi-compatible mode
 set noexrc          " don't use local version of .(g)vimrc, .exrc
-set background=dark " we plan to use a dark background
 set cpoptions=aABceFsmq
              "|||||||||
              "||||||||`-- When joining lines, leave the cursor
@@ -40,8 +47,6 @@ set cpoptions=aABceFsmq
              "||`-------- A backslash has no special meaning in mappings
              "|`--------- :write updates alternative file name
              "`---------- :read updates alternative file name
-colorscheme molokai
-syntax on " syntax highlighting on
 " }
 
 " General {
@@ -118,3 +123,14 @@ set shiftround       " when at 3 spaces, and I hit > ... go to 4, not 5
 set smartcase        " if there are caps, go case-sensitive
 " }
 
+" Colorscheme {
+syntax enable
+
+if has('gui_running')
+  set background=light
+  colorscheme solarized
+else
+  set background=dark
+  colorscheme molokai
+endif
+" }
