@@ -129,3 +129,8 @@ set smartcase        " if there are caps, go case-sensitive
 " Colorscheme {
 syntax enable
 colorscheme molokai
+" }
+
+" Powerline {
+let g:Powerline_symbols = 'fancy'
+" }

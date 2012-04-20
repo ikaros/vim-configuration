@@ -12,6 +12,12 @@ task :place_vim_config do
     FileUtils.ln_s file_path_from, file_path_to
     print "done\n"
   end
+
+  puts ''
+  puts '= Important '.ljust 80, '='
+  puts 'This vim setup uses powerline with fancy symbols. You should use the'
+  puts 'monaco_for_powerline.otf font which can be found in the fonts folder.'
+  puts '=' * 80
 end
 
 

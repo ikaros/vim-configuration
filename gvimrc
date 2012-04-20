@@ -22,8 +22,7 @@ if has("gui_macvim")
                                 " 1: only if there are at least two tab pages
                                 " 2: always
   set guioptions=               " Remove the toolbar, menubar, scrollbars etc
-  set guifont=Monaco:h12
-  set linespace=3
+  set guifont=Monaco\ for\ Powerline:h12
 
   macmenu &File.New\ Tab key=<nop>
   map <D-t> <Plug>PeepOpen
