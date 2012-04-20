@@ -128,12 +128,4 @@ set smartcase        " if there are caps, go case-sensitive
 
 " Colorscheme {
 syntax enable
-
-if has('gui_running')
-  set background=light
-  colorscheme solarized
-else
-  set background=dark
-  colorscheme molokai
-endif
-" }
+colorscheme molokai

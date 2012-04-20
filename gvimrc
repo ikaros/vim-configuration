@@ -23,6 +23,7 @@ if has("gui_macvim")
                                 " 2: always
   set guioptions=               " Remove the toolbar, menubar, scrollbars etc
   set guifont=Monaco:h12
+  set linespace=3
 
   macmenu &File.New\ Tab key=<nop>
   map <D-t> <Plug>PeepOpen
