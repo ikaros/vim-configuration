@@ -11,6 +11,8 @@ if has("autocmd")
   autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType cucumber   setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType coffee     setlocal ts=2 sts=2 sw=2 expandtab   list
+  autocmd FileType less       setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType python     setlocal ts=4 sts=4 sw=4 expandtab   list
   autocmd FileType vim        setlocal ts=2 sts=2 sw=2 expandtab   list
   autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab   list
@@ -18,6 +20,7 @@ if has("autocmd")
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab nolist
   autocmd FileType snippet    setlocal ts=8 sts=8 sw=8 noexpandtab nolist
   autocmd FileType xml        setlocal ts=4 sts=4 sw=4 noexpandtab list
+  autocmd FileType d          setlocal ts=4 sts=4 sw=4 expandtab   list
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
